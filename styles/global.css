@@ -41,9 +41,9 @@ button {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding-top: 133px;
-  padding-left: 50px;
-  padding-bottom: 96px;
-  padding-right: 50px;
+  padding: 133px 50px 96px;
 }
+
+
+
 
