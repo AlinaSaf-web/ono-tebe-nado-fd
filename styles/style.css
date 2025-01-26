@@ -1,49 +1,45 @@
-.header {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
-  padding: 133px 50px 96px;
-}
+.header { 
+  display: grid; 
+  grid-template-columns: 1fr 140px 1fr; 
+  align-items: center; 
+  padding: 120px 40px 140px 20px; 
+} 
 
-.header_menu {
-  display: flex;
-  justify-content: center;
-}
+.header_menu { 
+  display: flex; 
+  justify-content: center; 
+} 
 
-.menu_links {
-  display: flex;
-  gap: 34px;
-  list-style-type: circle; 
-  padding-right: 7px;
-}
+.menu_links { 
+  display: flex; 
+  gap: 50px; 
+  list-style-type: circle;  
+  padding-right: 70px; 
+  font-size: 20px;
+} 
 
-.link_list {
-  font-style: 18px;
-  font-weight: 400;
-  text-underline-offset: 4px;
-}
+.link_list { 
+  font-style: normal;
+  font-weight: 400; 
+  text-underline-offset: 4px; 
+} 
 
-.header__links-list-item_no-bullit {
-  list-style-type: none;
-}
-
-.link_main {
+.link_active {
   text-decoration: none;
 }
 
-.address {
-  padding-left: 193px;
-  font-size: 18px;
-  line-height: 24.3px;
-  letter-spacing: 0%;
-  font-family: Raleway, sans-serif;
-  list-style-type: none;
-  font-style: normal;
-}
+.address { 
+  padding-left: 200px; 
+  font-size: 22px; 
+  line-height: 30px; 
+  font-family: Raleway, sans-serif; 
+  list-style-type: none; 
+  font-style: normal; 
+} 
 
-.header_logo {
-  display: block;
-  width: 129.11px;
+.header_logo { 
+  display: block; 
+  width: 164px; 
 }
 
 .cover  {
@@ -75,7 +71,6 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 115%;
-  letter-spacing: 30%;
 }
 
 .aligned-text {
@@ -116,11 +111,12 @@
   background-color: transparent;
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-style: 22px;
+  font-style: normal;
   line-height: 26px;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .title_lots {
@@ -144,13 +140,10 @@
   margin-left: 24px;
 }
 
-.card_lots {
+.card {
   max-width: 334px;
   min-height: 596;
   flex-grow: 1;
-}
-
-.card {
   position: relative;
   height: 100%;
   display: flex;
@@ -158,7 +151,7 @@
   z-index: 1; 
   padding: 48px 40px 48px 40px;
   justify-content: space-between;
-  block-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -185,6 +178,7 @@
 }
 
 .text_card {
+  text-decoration: none;
   color: white;
   font-size: 20px;
   font-weight: 400;
@@ -205,16 +199,15 @@
 
 .about {
   margin-top: 155px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  padding:  155px 24px 180px 24px;
 }
 
 .about_column {
-  display: flex;
-  flex: 1;
+display: grid;
 }
-
 
 .about_logo {
   background-color: #000;
@@ -230,26 +223,24 @@
 .about__logo-image {
 width: 141.54px;
 height: 112.55px;
-left: 4.42px;
-top: 1.25px;
 }
 
-.about_content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+.about__column_size_big {
+  grid-column: span 2;
+  gap: 100px;
   padding-top: 100px;
-  margin-left: auto;
+  margin-left: 72px;
 }
 
 .about_title {
+  text-transform: uppercase;
   color: black;
   font-size: 40px;
   font-weight: 700;
   line-height: 47px;
 }
 
-.about_text{
+.about_text {
   align-self: flex-start;  
   font-family: "Raleway", sans-serif;  
   color: black;  
@@ -258,12 +249,11 @@ top: 1.25px;
   line-height: 24px;
 }
 
-.up_text {
-  padding-top: 100px;
-}
-
-.down_text {
-  padding-top: 24px;
+.about_paragraphs {
+  display: flex;
+  flex-direction: column; 
+  gap: 25px;
+  min-width: 600px;
 }
 
 .footer {
@@ -274,10 +264,8 @@ top: 1.25px;
   align-items: flex-start;
 }
 
-.address_footer {
-  font-style: normal;
+.address_left {
   padding-left: 0px;
-  list-style-type: none;
 }
 
 .footer__menu {
@@ -294,17 +282,22 @@ top: 1.25px;
   line-height: 21px;
 }
 
-.footer__menu-link_active {
+.link_active {
   text-decoration: none;
 }
 
 .footer__social-list {
   display: flex;
   gap: 48px;
-  width: 48px;
-  height: 48px;
+  padding-left: 177.5px;
 }
 
+.footer__social-item {
+width: 48px;
+height: 48px;
+}
+
+  
 
 
 
