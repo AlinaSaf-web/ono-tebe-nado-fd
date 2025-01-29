@@ -1,8 +1,8 @@
 .header { 
   display: grid; 
-  grid-template-columns: 1fr 140px 1fr; 
+  grid-template-columns: 1fr min-content 1fr; 
   align-items: center; 
-  padding: 120px 40px 140px 20px; 
+  padding: 89px 50px 96px 50px; 
 } 
 
 .header_menu { 
@@ -10,12 +10,11 @@
   justify-content: center; 
 } 
 
-.menu_links { 
+.header_menu_links { 
   display: flex; 
-  gap: 50px; 
+  gap: 28px; 
   list-style-type: circle;  
-  padding-right: 70px; 
-  font-size: 20px;
+  font-size: 18px;
 } 
 
 .link_list { 
@@ -26,12 +25,19 @@
 
 .link_active {
   text-decoration: none;
+  list-style: none;
+  padding: 0;
 }
 
-.address { 
-  padding-left: 200px; 
-  font-size: 22px; 
-  line-height: 30px; 
+.header_address_link {
+  justify-self: end;
+  max-width: 240px;
+  width: 100%;
+}
+
+.address_link-menu { 
+  font-size: 18px; 
+  line-height: 135%; 
   font-family: Raleway, sans-serif; 
   list-style-type: none; 
   font-style: normal; 
@@ -39,7 +45,8 @@
 
 .header_logo { 
   display: block; 
-  width: 164px; 
+  width: 148px; 
+  height: 105px;
 }
 
 .cover  {
@@ -66,7 +73,7 @@
   display: flex;
   flex-direction: column;
   padding: 165px 50px 106px 50px;
-  gap: 20px;
+  gap: 21px;
   text-align: center;
   font-size: 100px;
   font-weight: 700;
@@ -75,18 +82,19 @@
 
 .aligned-text {
   align-self: flex-start;
+  letter-spacing: 29px;
 }
 
 .aligned-text_center {
   align-self: center;
   text-align: center;
-  line-height: 115%;
-
+  letter-spacing: 22px;
 }
 
 .aligned-text_right {
   align-self: flex-end;    
   text-align: right;
+  letter-spacing: 22px;
 }
 
 .cover_description {
@@ -98,9 +106,9 @@
 }
 
 .cover_text {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
+  font-size: 22px;  
+  font-weight: 400;  
+  line-height: 28px;  
   word-spacing: 18px;
 }
 
@@ -175,15 +183,15 @@
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
+  padding-bottom: 48px;
 }
 
-.text_card {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
+.text_on_card {
+  color: white;  
+  font-size: 20px;  
+  font-style: normal; 
+  font-weight: 400;  
   line-height: 120%;
-  font-style: normal;
 }
 
 .look-more-link {
@@ -191,7 +199,7 @@
   text-underline-offset: 1px;
   padding-top: 30px;
   color: black;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 23px;
   margin-left: 64px;
@@ -202,7 +210,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  padding:  155px 24px 180px 24px;
+  padding:  155px 29px 181px 71px;
 }
 
 .about_column {
@@ -259,9 +267,17 @@ height: 112.55px;
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  padding: 180px 50px 82px;
+  padding: 1px 50px 82px 50px;
   gap: 140px;
   align-items: flex-start;
+}
+
+.footer_address {
+  font-size: 18px; 
+  line-height: 135%; 
+  font-family: Raleway, sans-serif; 
+  list-style-type: none; 
+  font-style: normal; 
 }
 
 .address_left {
